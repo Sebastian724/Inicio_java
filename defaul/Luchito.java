@@ -3,16 +3,27 @@ import java.util.Scanner;
 public class Luchito {
 
 	public static void main(String[] args) {
-		double Pers1, Pers2, Pers3, resul;
-		Scanner sc = new Scanner( System.in);
-		System.out.print("Ingrese el salario de Guillermo: " );
-		Pers1 = sc.nextDouble();
-		Pers2 = Pers1/2;
-		Pers3 = (Pers1 + Pers2)/2;
-		resul = Pers1 + Pers2 + Pers3;
-		System.out.println("La suma es: "+resul);
 		
 		
+		for(int i = 1; i<=100;i++) {
+			
+			if (i%3==0 && i%5==0 ) {
+				System.out.println("fizz buzz");
+				
+			}	
+			else if (i%3==0) {
+				
+				System.out.println("fizz");
+			}
+			else if (i%5==0) {
+				System.out.println("buzz");
+			}
+			
+			else {
+				System.out.println(i);
+				
+			}
+		}
 	    
 		
 
